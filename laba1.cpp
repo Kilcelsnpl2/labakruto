@@ -4,7 +4,6 @@
  * Название: вариант 4   *
  *************************/
 #include <iostream>
-#include <math.h>
 #include <cmath>
 using namespace std;
 
@@ -26,15 +25,15 @@ int main() {
   cout << " a = ";
   cin >> a;
 
-  K = (y - 1) / y;
-  n1 = 1 - (pow((1 / b), K));
-  n2 = (T2 - T1) / (T2 + ((T2 - T1) / ((y - 1) * log(a))));
-  n3 = 1 - K * (log(b) / (pow(b, K) - 1));
+  K = (y - 1.0) / y;
+  n1 = 1.0 - (pow((1.0 / b), K));
+  n2 = (T2 - T1) / (T2 + ((T2 - T1) / ((y - 1.0) * log(a))));
+  n3 = 1.0 - K * (log(b) / (pow(b, K) - 1.0));
   
   cout << "n1 =" << n1 << endl
-  << "n2 =" << n2 << endl
-  << "n3 =" << n3 << endl
-  << "K =" << K << endl;
+	   << "n2 =" << n2 << endl
+       << "n3 =" << n3 << endl
+       << "K =" << K << endl;
   
   return 0;
 }
